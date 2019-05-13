@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+  {% block content %}
+  
+  <h1 align="center" style="color:black"> CSE5334 Data Mining Term Project </h1>
+  <p align="center"><a href="search" > For searching the dataset Click Here!! </a></p>
+  <p align="center"><a href="classify" > For adding a review to the dataset and see the classification Click Here!! </a></p>  
+  <pre> Report:
+       * Used Inverted index model, building tf-idf  weights with posting list.<a href="https://sananara-aryabhata.netlify.com/post/first_search_engine/">Source</a>
+	   * Removed non-alphabetic charecters, stop words, converted to lower case and removed partially filled review entries.
+       * Used document to bag of words for vector representation of reviews.
+	   
+	   
+	   * <a href="https://github.com/sanath-narasimhan/Pill-em-All/blob/master/back_end.py">Back end Code</a>
+	   * <a href="https://github.com/sanath-narasimhan/Pill-em-All/blob/master/Reviews_to_tdmatrix.py">Dictionary and review corpus generator Code</a>
+  </pre>	   
+  {% endblock %}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

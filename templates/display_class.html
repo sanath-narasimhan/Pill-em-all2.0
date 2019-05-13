@@ -1,0 +1,19 @@
+{% extends "review_index.html" %}
+ {% block result %}
+ <h2>Scroll down...</h2>
+ <div class="search_result">  
+    <div class="result_box">
+        <h3 style="width:100%; color:white"> Showing Results of top 10 classes...
+            <p><br>Query:<br>
+                {{review}} 
+            </p>
+			 
+             {% for key, value in result.items() %}
+				{{key}}    {{value}}<br>
+             {% endfor %}  
+			
+        </h3>
+        
+    </div>
+ </div>
+ {% endblock %}

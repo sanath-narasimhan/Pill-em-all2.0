@@ -1,0 +1,41 @@
+{% extends "index.html" %}
+ {% block result %}
+  <h2>Scroll down for recommendations...</h2>
+ <div class="search_result">  
+    <div class="result_box">
+        <h3> Showing Results for...{{query}} </h3>
+            <div class="outtab">
+				
+					<table class="table"; style="width:75%; color:white">
+						<tr><b>
+							<th>Review ID</th>
+							<th>Drug Name</th>
+							<th>Useful count</th>
+							<th>Condition</th>
+							<th>Rating(/10)</th>
+							<th>Review</th>
+							<th>Similarity</th></b>
+						</tr>
+						{% for row in result %}
+						
+						<tr>
+							
+					        <td name = 'revID'><a href="recommend?revID={{row['ReviewID']}}" class="review">{{row['ReviewID']}}</td>
+							<td name = 'drugName' style="border:none">{{row['Drug Name']}}</td>
+							<td name = 'usefulCount'>{{row['Useful count']}}</td>
+							<td name = 'condition'>{{row['Condition']}}</td>
+							<td name = 'rating'>{{row['Rating(/10)']}}</td>
+							<td name = 'review'>{{row['Review']}}</td>
+							<td name = 'similarity'>{{row['Similarity']}}</td>
+							
+						</tr>
+						
+						{% endfor %}
+					</table>
+				
+			</div>	 
+      	
+        
+    </div>
+ </div>
+ {% endblock %}

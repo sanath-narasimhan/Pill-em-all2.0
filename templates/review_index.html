@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+  {% block content %}
+    <div class="s01">
+      <form action = "/class_result" method = "POST">
+        <fieldset>
+          <legend id="logo" align="center">Pill-Em-All</legend>
+        </fieldset>
+		
+        <div class="inner-form">
+          <div class="input-field first-wrap">
+            <input name="review" type="text" placeholder="Add Review for the above medicine" />
+          </div>
+          <div class="input-field third-wrap">
+            <button class="btn-search" type="submit" value="Review" ><i class="fa fa-medkit" aria-hidden="true"></i> Classify</button>
+          </div>
+        </div>
+      </form>
+    </div>
+	<div class="search_result">{% block result %}{% endblock %}</div>
+	
+  {% endblock %}
+

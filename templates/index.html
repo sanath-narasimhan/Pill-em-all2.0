@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+  {% block content %}
+    <div class="s01">
+      <form action = "/result" method = "POST">
+        <fieldset>
+          <legend id="logo" align="center">Pill-Em-All</legend>
+        </fieldset>
+        <div class="inner-form">
+          <div class="input-field first-wrap">
+            <input name="search" type="text" placeholder="How are you feeling?" />
+          </div>
+          <div class="input-field third-wrap">
+            <button class="btn-search" type="submit" value="Search" ><i class="fa fa-medkit" aria-hidden="true"></i> Search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+	<div class="search_result">{% block result %}{% endblock %}</div>
+	
+  {% endblock %}
+
