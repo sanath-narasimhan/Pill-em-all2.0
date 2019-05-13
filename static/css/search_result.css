@@ -1,0 +1,82 @@
+body {
+  font-family: Arial;
+  color: #fff;
+  background-image: url("pillemall2.jpg")
+}
+p.logo {
+    padding-left: 2%;
+    width: 11%;
+    float: left;
+    font-weight: bold;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 69%;
+  background: #f1f1f1;
+}
+
+#head{
+     margin: 0%;
+     width: 100%;
+     background: rgba(0, 100, 0, 0.5);
+     padding-top: 15px;
+     padding-bottom: 5px
+}
+
+form.example button {
+  float: left;
+  margin-left : 1%;
+  margin-right: 1%;
+  width: 13%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.search_result{
+     display: inline-block;
+     margin-top: 10px;
+     width: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     padding-top: 15px;
+     padding-bottom: 5px
+}
+
+.search_result img{
+    max-height: 150px;
+    max-width: 10%;
+    float: left;
+    margin-left: 2%;
+    margin-right:2%;
+}
+.result_box{
+    float: left;
+    width: 80%;
+    margin-left: 2%;
+    margin-right: 4%;
+    overflow: hidden;
+    padding-bottom: 15px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+p.description{
+    width:100%;
+    padding-left: 0%;}
