@@ -215,6 +215,7 @@ def get_wordnet_pos(self, word):
         out = []
         for (ind,s) in show:
           out.append(  [data.loc[data.revID == ind, 'revID'].item(), data.loc[data.revID == ind, 'drugName'].item(), data.loc[data.revID == ind, 'usefulCount'].item(), data.loc[data.revID == ind, 'condition'].item(), data.loc[data.revID == ind, 'rating'].item(), data.loc[data.revID == ind, 'review'].item(), s])
+          out = out.sort_values(['Similarity','Useful count'], ascending=[False, False])
         
 ```
 
