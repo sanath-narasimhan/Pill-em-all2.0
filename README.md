@@ -1,4 +1,4 @@
-## Pill-em-all2.0
+## Pill-em-all 2.0
 <h1> Search and Recommendor system for Medicines </h1>
 
 This is a project developed for searching the the kaggle [data-set](https://www.kaggle.com/jessicali9530/kuc-hackathon-winter-2018/home)
