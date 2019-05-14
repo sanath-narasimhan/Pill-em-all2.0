@@ -36,6 +36,9 @@ Directly run the app.py file by the command **python app.py**
 </pre>
 </body>
 
+>app.py
+**Manages the front end using flask**
+
 >Searchclassify.py
 
 **Creating Inverted Index**
