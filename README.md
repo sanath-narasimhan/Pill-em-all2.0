@@ -26,13 +26,11 @@ from sklearn.model_selection import train_test_split
 **Steps to run the flask app locally**
 <body>
 <pre>
-1. Install flask in your localpython environment. Download the content of this repository into a local folder.
+1.Install flask in your localpython environment. Download the content of this repository into a local folder.
 
-2. Set the FLASK_APP environment variable to app.py and run command **flask run**
-   or
-   Directly run the app.py file by the command **python app.py**
+2.Set the FLASK_APP environment variable to app.py and run command **flask run** <b> or <b> Directly run the app.py file by the command **python app.py**
 
-3. Open **localhost:5000** in the web browser to see and interact with the app.
+3.Open **localhost:5000** in the web browser to see and interact with the app.
 </pre>
 </body>
 
